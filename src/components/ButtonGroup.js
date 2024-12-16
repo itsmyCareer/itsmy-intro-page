@@ -44,7 +44,7 @@ function ButtonGroup({ buttonsState, setButtonsState, handleButtonEvent }) {
             {buttonsState === "initial" && (
                 <motion.div
                     key="initial-buttons"
-                    className="grid grid-cols-2 gap-24 md:gap-32 lg:gap-40"
+                    className="grid grid-cols-2 sm:grid-cols-2 gap-16 md:gap-32 lg:gap-40 items-center justify-center"
                     variants={buttonVariants}
                     initial="hidden"
                     animate="visible"
@@ -68,7 +68,7 @@ function ButtonGroup({ buttonsState, setButtonsState, handleButtonEvent }) {
             {buttonsState === "work" && (
                 <motion.div
                     key="work-buttons"
-                    className="grid grid-cols-4 gap-16 md:gap-24 lg:gap-32"
+                    className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 sm:gap-12 gap-16 md:gap-24 lg:gap-32 items-center justify-center"
                     variants={buttonVariants}
                     initial="hidden"
                     animate="visible"
@@ -98,7 +98,7 @@ function ButtonGroup({ buttonsState, setButtonsState, handleButtonEvent }) {
             {buttonsState === "contact" && (
                 <motion.div
                     key="contact-buttons"
-                    className="grid grid-cols-4 gap-16 md:gap-24 lg:gap-32"
+                    className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 sm:gap-12 gap-16 md:gap-24 lg:gap-32 items-center justify-center"
                     variants={buttonVariants}
                     initial="hidden"
                     animate="visible"
